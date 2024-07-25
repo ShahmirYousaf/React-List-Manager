@@ -1,0 +1,18 @@
+.ad {
+    background-color: #f1f1f1;
+    padding: 15px;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    color: black;
+    padding-top: 290px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 150px;
+    height: 70px;
+  }
+  

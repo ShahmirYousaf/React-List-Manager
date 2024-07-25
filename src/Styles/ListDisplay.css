@@ -1,0 +1,65 @@
+.listDisplay {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listDisplay h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.listDisplay ul {
+  list-style: none;
+  padding: 0;
+}
+
+.listDisplay li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.listDisplay li:hover {
+  background-color: #f1f1f1;
+}
+
+.listDisplay li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.btn-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listDisplay button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 33%;
+}
+
+.listDisplay button:hover {
+  background-color: #c82333;
+}
+
+p {
+  text-align: center;
+}
