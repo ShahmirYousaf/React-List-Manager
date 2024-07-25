@@ -13,13 +13,13 @@ class Sidebar extends Component {
             className={activePage.currentPage === 1 ? 'active' : ''}
             onClick={() => navigateTo(1)}
           >
-            Page 1
+            Add to List
           </li>
           <li
             className={activePage.currentPage === 2 ? 'active' : ''}
             onClick={() => navigateTo(2)}
           >
-            Page 2
+            Delete from List
           </li>
         </ul>
       </nav>

@@ -64,7 +64,7 @@ class ListDisplay extends Component {
               </ul>
               )}
               <div className='btn-delete'>
-              <button onClick={this.handleDeleteButton}>Delete Selected and Go Back</button>
+              <button onClick={this.handleDeleteButton}>Delete and Go Back</button>
               </div>
              
             </div>
