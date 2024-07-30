@@ -22,11 +22,16 @@
     margin-top: 10px;
     cursor: pointer;
   }
+
+  .page-link {
+    text-decoration: none;
+    color: black;
+  }
   
   .sidebar li:hover {
     background-color:  #3c73c0;
   }
-  .sidebar li.active {
+  /* .sidebar li.active {
     background-color: #d6d4d4;
     font-weight: bold;
-  }
+  } */

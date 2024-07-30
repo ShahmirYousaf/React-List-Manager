@@ -2,4 +2,36 @@
     background-color: #306cbf;
     padding: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .auth-links a,
+  .user-info span {
+    color: rgb(10, 10, 10);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 200;
+    color: black;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #da505e;
+  }

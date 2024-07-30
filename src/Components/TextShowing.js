@@ -3,6 +3,7 @@ import TextInput from './TextInput'
 import SingletonList from './SingletonList'
 import '../Styles/TextShowing.css'
 import { getList, addItem } from '../Utility/Localstorage';
+import { Link  } from 'react-router-dom';
 
 class TextShowing extends Component {
     constructor(props) {
@@ -48,8 +49,9 @@ class TextShowing extends Component {
                 )}
                 <TextInput addListItem = {this.addListItem} />
                 <div className="button-container">
-                    <button className='n-p-btn' onClick={this.props.navigatePrev} disabled={this.props.currentPage === 1}>Previous</button>
-                    <button className='n-p-btn' onClick={this.props.navigateNext} disabled={this.props.currentPage === 2}>Next</button>
+                    {/* <button className='n-p-btn' onClick={this.props.navigatePrev} disabled={this.props.currentPage === 1}>Previous</button> */}
+                    <Link className='n-p-btn' disabled={this.props.currentPage === 2} to ="/page2" >Next</Link>
+                    {/* <button className='n-p-btn' onClick={this.props.navigateNext} disabled={this.props.currentPage === 2}>Next</button> */}
                 </div>
             </div>
         );

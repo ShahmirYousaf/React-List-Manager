@@ -20,6 +20,17 @@ class ListManager
         return this._listData;
     }
 
+    static getInstance() 
+    {
+        if(!ListManager.instance) 
+        {
+            const instance = new ListManager();
+            return instance;
+        }
+
+        return ListManager.instance;
+    }
+
     AddItemInList(item)
     {
         this._listData.push(item);
@@ -42,7 +53,8 @@ class ListManager
 
 }
 
-const instance = new ListManager();
-Object.freeze(instance);
+const instance = ListManager.getInstance();
+
+//Object.freeze(instance);
 
 export default instance;

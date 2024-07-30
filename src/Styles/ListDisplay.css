@@ -55,7 +55,25 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: block;
-  width: 25%;
+}
+
+.back-btn{
+  background-color:#306cbf;
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin: 10px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.back-btn:hover {
+  background-color: #004a99;
 }
 
 .listDisplay button:hover {

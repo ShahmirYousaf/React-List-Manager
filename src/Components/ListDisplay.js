@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SingletonList from './SingletonList'
 import '../Styles/ListDisplay.css'
 import { getList, removeItems } from '../Utility/Localstorage';
+import { Link } from 'react-router-dom';
 
 class ListDisplay extends Component {
     constructor(props) {
@@ -40,7 +41,7 @@ class ListDisplay extends Component {
             //listData: getList(),
             selectedItems: []
         });
-        this.props.navigatePrev();
+        // this.props.navigatePrev();
     }
 
     render() {
@@ -64,7 +65,10 @@ class ListDisplay extends Component {
               </ul>
               )}
               <div className='btn-delete'>
-              <button onClick={this.handleDeleteButton}>Delete and Go Back</button>
+              <button onClick={this.handleDeleteButton}>Delete</button>
+              <Link className='back-btn' to="/">
+                 Go Back
+              </Link>
               </div>
              
             </div>
